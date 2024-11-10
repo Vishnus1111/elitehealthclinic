@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles1.css">
+    <title>Clinic Website</title>
+</head>
+<body>
+  <header>
+  <h1 class="Clinic">Elite Health Clinic</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
+  <ul class="links">
+    <li><a href="/home"><button class="b1">Home</button></a></li>
+    <li><a href="/about"><button class="b1">About</button></a></li>
+    <li><a href="/doctors"><button class="b1">Doctors</button></a></li>
+    <li><a href="/contacts"><button class="b1">Contacts</button></a></li>
+  </ul>
+</header>
+<script>
+  function toggleMenu() {
+    document.querySelector('.hamburger').classList.toggle('active');
+    document.querySelector('.links').classList.toggle('active');
+  }
+</script>
+  <div class="space"></div>
+    <form action="/book_form" method="post" onsubmit=" return book_form()" >
+      <div class="myheader">
+        <h1>Book Appointment</h1>
+      </div>
+      <div class="formGroup">
+        <br><label for="p_id"><b>Patient ID:</b></label>
+        <input type="number" id="p_id" name="p_id" required>
+      </div>
+      <br>
+      <div class="formGroup">
+        <br><label for="d_id"><b>Doctor ID:</b></label>
+        <input type="number" id="d_id" name="d_id" placeholder="refer from doctors page"  required>
+      </div>
+      <br>
+      <div class="formGroup">
+        <br><label for="cases"><b>Case:</b></label>
+        <input type="text" id="cases" name="cases" placeholder="explain the problems and symptoms you have" required>
+      </div>
+      <div class="formGroup">
+        <br><label for="day"><b> Appointment Date:</b></label>
+        <input type="date" id="day" name="day" required>
+      </div>
+      <div class="formGroup">
+        <br><label for="time"><b>Timings:</b></label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <BR>
+        <br>
+      <button type="submit" class="bb">Book</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Clinic Website</title>
+    <link  rel="stylesheet" href="/static/styles1.css">
+</head>
+<body>
+    <header>
+        <h1 class="Clinic">Elite Health Clinic</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
+        <ul class="links">
+          <li><a href="/home"><button class="b1">Home</button></a></li>
+          <li><a href="/about"><button class="b1">About</button></a></li>
+          <li><a href="/doctors"><button class="b1">Doctors</button></a></li>
+          <li><a href="/contacts"><button class="b1">Contacts</button></a></li>
+        </ul>
+      </header>
+      <script>
+        function toggleMenu() {
+          document.querySelector('.hamburger').classList.toggle('active');
+          document.querySelector('.links').classList.toggle('active');
+        }
+      </script>
+    <div class="success"><br><br>
+        REGISTERED SUCCESSFULLY......Now you can book an appointment
+    </div>
+</body>
+</html>

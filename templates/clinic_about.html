@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles1.css">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Clinic Website</title>
+</head>
+<body>
+  <header>
+  <h1 class="Clinic">Elite Health Clinic</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
+  <<ul class="links">
+    <li><a href="/home"><button class="b1">Home</button></a></li>
+    <li><a href="/about"><button class="b1">About</button></a></li>
+    <li><a href="/doctors"><button class="b1">Doctors</button></a></li>
+    <li><a href="/contacts"><button class="b1">Contacts</button></a></li>
+  </ul>
+</header>
+<script>
+  function toggleMenu() {
+    document.querySelector('.hamburger').classList.toggle('active');
+    document.querySelector('.links').classList.toggle('active');
+  }
+</script>
+  <div class="line"></div>
+  <div class="content">
+    <ul>
+   <li> At Elite Health Clinic, we believe in a patient-centric approach to healthcare. Our state-of-the-art facilities are equipped with advanced technology to ensure accurate diagnostics and effective treatments. Whether you're seeking routine check-ups, managing chronic conditions, or exploring wellness options, our skilled medical team is here for you.</li>
+
+ <li>Explore our comprehensive range of services, including primary care, specialized consultations, diagnostic screenings, and preventive health programs. We prioritize open communication, ensuring you are well-informed and actively involved in your healthcare decisions.</li>
+
+<li>With a commitment to excellence, we strive to create a supportive and caring environment for every patient. Your health is our priority, and we look forward to being your trusted healthcare partner. Schedule an appointment today and experience healthcare tailored to your needs at Elite Health Clinic.</li>
+ </ul> </div>
+</body>
+</html>

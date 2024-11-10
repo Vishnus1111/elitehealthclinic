@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("background.jpg");
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Clinic Title */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  z-index: 10;
+}
+
+.Clinic {
+  font-size: 2.5em;
+  color: rgb(1, 1, 66);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navigation Links */
+.links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.links li {
+  margin: 0;
+}
+
+/* Button Styling */
+.b1 {
+  background-color: rgb(250, 99, 99);
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 5px 15px;
+  color: black;
+  font-size: 1em;
+}
+
+.b1:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+  display: none; /* Hidden by default, shown on mobile */
+  font-size: 1.8em;
+  cursor: pointer;
+  color: black;
+}
+
+/* Content Section */
+.content {
+  margin-top: 125px; /* Adjust to ensure it clears the fixed header */
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+/* Success Message Styling */
+.success {
+  font-size: 2em;
+  background-color: rgb(149, 201, 172);
+  text-align: center;
+  width: 50%;
+  margin: 16% auto 0;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  color: rgb(9, 139, 87);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .links {
+      display: none; /* Hide links by default on smaller screens */
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      gap: 10px;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  /* Display links when hamburger is active */
+  .hamburger.active + .links {
+      display: flex;
+  }
+
+  /* Adjust header layout */
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .Clinic {
+      font-size: 2em;
+  }
+
+  /* Adjust content padding for smaller screens */
+  .content {
+      width: 90%;
+      margin: 100px auto;
+      padding: 10px;
+  }
+
+  .success {
+      width: 80%;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Clinic Website</title>
+</head>
+<body>
+  <header>
+  <h1 class="Clinic">Elite Health Clinic</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
+  <ul class="links">
+    <li><a href="/home"><button class="b1">Home</button></a></li>
+    <li><a href="/about"><button class="b1">About</button></a></li>
+    <li><a href="/doctors"><button class="b1">Doctors</button></a></li>
+    <li><a href="/contacts"><button class="b1">Contacts</button></a></li>
+  </ul>
+</header>
+<script>
+  function toggleMenu() {
+    document.querySelector('.hamburger').classList.toggle('active');
+    document.querySelector('.links').classList.toggle('active');
+  }
+</script>
+  <div class="text">
+    <div class="text1">We CARE for YOU</div>
+    <div class="text2">Register if you are booking appointment for first time...</div>
+  </div>
+  <a href="/register"><button class="bb">Register</button></a>
+  <a href="/appointment"><button class="bb">Appointment</button></a>
+</body>
+</html>

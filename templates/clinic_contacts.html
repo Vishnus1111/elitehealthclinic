@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles1.css">
+    <title>Clinic Website</title>
+</head>
+<body>
+  <header>
+  <h1 class="Clinic">Elite Health Clinic</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
+  <ul class="links">
+    <li><a href="/home"><button class="b1">Home</button></a></li>
+    <li><a href="/about"><button class="b1">About</button></a></li>
+    <li><a href="/doctors"><button class="b1">Doctors</button></a></li>
+    <li><a href="/contacts"><button class="b1">Contacts</button></a></li>
+  </ul>
+</header>
+<script>
+  function toggleMenu() {
+    document.querySelector('.hamburger').classList.toggle('active');
+    document.querySelector('.links').classList.toggle('active');
+  }
+</script>
+  <div class="line"></div>
+  <div class="content">
+    <ul>
+   <li> 
+    <b><u>Contact Information:</u></b> 
+        <ul><b>Phone number:</b><li>1234567890</li><li>2346435703</li></ul> 
+        <ul><b>E-mail address:</b><li>EliteHealthClinic@gmail.com</li></ul>
+        <ul><b>Address:</b><li>Elite Building, K.R.Puram, Bengaluru-560036<br>Karnataka, Bharat.</Bengaluru-560036br></li></ul>
+   </li>
+   <li><b>Social Media Links:</b>
+    <ul><b>Facebook:</b><li>EliteHealthClinic.facebook.com</li></ul>
+    <ul><b>Instagram:</b><li>EliteHealthClinic.instagram.com</li></ul>
+    <ul><b>Twitter:</b><li>EliteHealthClinic.twitter.com</li></ul>
+    </li>
+ </ul> 
+    </div>
+</body>
+</html>
